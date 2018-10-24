@@ -1,0 +1,5 @@
+{
+  "terminal.integrated.cwd": "C:\\Dev\\Oskor\\mech-trader",
+  "docker.defaultRegistryPath": "mechtrader.azurecr.io",
+  "editor.tabSize": 2
+}
