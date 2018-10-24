@@ -38,7 +38,7 @@ jobs:
       - run: yarn ng build --prod
       - run: yarn ng test --watch=false
       
-      -run:
+      - run:
           command: |
             docker build -t mechtrader.azurecr.io/mech-trader:1.0
       - run:
