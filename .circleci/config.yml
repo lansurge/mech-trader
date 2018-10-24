@@ -40,7 +40,7 @@ jobs:
       
       - run:
           command: |
-            docker build -t mechtrader.azurecr.io/mech-trader:1.0
+            docker build -t mechtrader.azurecr.io/mech-trader:1.0 .
       - run:
           command: |
             docker login --username $DOCKER_USER --password $DOCKER_PASS mechtrader.azurecr.io
