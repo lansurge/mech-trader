@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 
+declare const TradingView: any;
 
 @Component({
   selector: 'app-tradingview-widget',

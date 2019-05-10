@@ -18,21 +18,21 @@ export class MechSetup {
     this._P2 = 0;
   }
 
-  round(n, d) {
+  round(n, d): string {
     return (Math.round(n * 1000) / 1000).toFixed(2);
   }
 
-  get X() {
-    return this.round(this.C + 0.25 * (this.B - this.A), 2);
+  get X(): number {
+    return Number(this.round(this.C + 0.25 * (this.B - this.A), 2));
   }
-  get P() {
-    return this.round(this.C + 0.5 * (this.B - this.A), 2);
+  get P(): number {
+    return Number(this.round(this.C + 0.5 * (this.B - this.A), 2));
   }
-  get P2() {
-    return this.round(this.C + 0.75 * (this.B - this.A), 2);
+  get P2(): number {
+    return Number(this.round(this.C + 0.75 * (this.B - this.A), 2));
   }
-  get D() {
-    return this.round(this.C + (this.B - this.A), 2);
+  get D(): number {
+    return Number(this.round(this.C + (this.B - this.A), 2));
   }
 }
 

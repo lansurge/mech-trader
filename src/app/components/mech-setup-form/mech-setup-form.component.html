@@ -1,4 +1,20 @@
+
+
 <form clrForm (ngSubmit)="getMechSetup()">
+    <div class="btn-group">
+        <div class="radio btn">
+            <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-1">
+            <label for="btn-demo-radio-1">Mech Entry</label>
+        </div>
+        <div class="radio btn">
+            <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-2">
+            <label for="btn-demo-radio-2">Camo Entry</label>
+        </div>
+        <div class="radio btn">
+            <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-3">
+            <label for="btn-demo-radio-3">HP Entry</label>
+        </div>
+    </div>
     <clr-input-container>
         <label>Stock Name</label>
         <input clrInput type="text" [(ngModel)]="stockName"  name="stockName" required />
@@ -8,6 +24,10 @@
         <label>A, B, C</label>
         <input clrInput [(ngModel)]="abc" type="text" name="abc" />
     </clr-input-container>
+    <clr-input-container>
+        <label>A, B, C (Camo)</label>
+        <input clrInput [(ngModel)]="abcCamo" type="text" name="abcCamo" />
+    </clr-input-container>
     <clr-input-container *ngIf="false">
         <label>Quantity</label>
         <input clrInput [(ngModel)]="quantity" type="text" name="quantity" />
@@ -16,7 +36,7 @@
         <label>$ Amount</label>
         <input clrInput [(ngModel)]="amount" type="text" name="amount" />
     </clr-input-container>
-    <button class="btn">Calculate Mech Setup</button>
+    <button class="btn" (ngClick)="getMechSetup()">Calculate Mech Setup</button>
 
     <pre>{{ tosOrder }}</pre>
 </form>
