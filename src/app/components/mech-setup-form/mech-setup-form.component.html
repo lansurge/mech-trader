@@ -24,19 +24,21 @@
         <label>A, B, C</label>
         <input clrInput [(ngModel)]="abc" type="text" name="abc" />
     </clr-input-container>
-    <clr-input-container>
+    <!-- <clr-input-container>
         <label>A, B, C (Camo)</label>
         <input clrInput [(ngModel)]="abcCamo" type="text" name="abcCamo" />
-    </clr-input-container>
+    </clr-input-container> -->
     <clr-input-container *ngIf="false">
         <label>Quantity</label>
         <input clrInput [(ngModel)]="quantity" type="text" name="quantity" />
     </clr-input-container>
-    <clr-input-container>
+    <!-- <clr-input-container>
         <label>$ Amount</label>
         <input clrInput [(ngModel)]="amount" type="text" name="amount" />
-    </clr-input-container>
+    </clr-input-container> -->
     <button class="btn" (ngClick)="getMechSetup()">Calculate Mech Setup</button>
 
     <pre>{{ tosOrder }}</pre>
+
+    <pre>{{ toChat }}</pre>
 </form>
